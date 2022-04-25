@@ -1,0 +1,72 @@
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: 'Poppins-Medium';
+	src: url('./Poppins-Medium.ttf');
+}
+
+body {
+    background: black;
+    overflow: hidden;
+}
+
+h1 {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 190, 50);
+    font-size: 40px;
+    font-family:'Poppins-Medium', sans-serif;
+    user-select: none;
+    z-index: -1;
+}
+
+.container {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn {
+    width: 250px;
+    height: 150px;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15%;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 7px 0 rgb(160,160,160);
+    font-size: 25px;
+    font-family:'Poppins-Medium', sans-serif;
+}
+
+.btn:active {
+    margin-top: 7px;
+    box-shadow: 0 0px 0 rgb(160,160,160);
+}
+
+.slot {
+    position: relative;
+    perspective: 1000px;
+}
+
+.slot div {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    user-select: none;
+}
